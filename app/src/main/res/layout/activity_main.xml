@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+  <Button
+      android:id="@+id/btnFacebook"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:text="L1 - Facebook"
+      app:layout_constraintBottom_toTopOf="@+id/btnInstagram"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/btnConstraint" />
+
+  <Button
+      android:id="@+id/btnConstraint"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:layout_marginTop="70dp"
+      android:text="L1 - Constraint layout"
+      app:layout_constraintBottom_toTopOf="@+id/btnFacebook"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <Button
+      android:id="@+id/btnInstagram"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:text="L1 - Instagram"
+      app:layout_constraintBottom_toTopOf="@+id/btnRandom"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/btnFacebook" />
+
+  <Button
+      android:id="@+id/btnRandom"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:text="L2 - Random"
+      app:layout_constraintBottom_toTopOf="@+id/btnCalculate"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/btnInstagram" />
+
+  <Button
+      android:id="@+id/btnCalculate"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:text="L2 - Calculate"
+      app:layout_constraintBottom_toTopOf="@+id/btnSignInForm"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/btnRandom" />
+
+  <Button
+      android:id="@+id/btnSignInForm"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:text="L2 - SignIn"
+      app:layout_constraintBottom_toTopOf="@+id/btnListView"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/btnCalculate" />
+
+  <Button
+      android:id="@+id/btnListView"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:text="L3 - ListView"
+      app:layout_constraintBottom_toTopOf="@+id/btnCustomListView"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/btnSignInForm" />
+
+  <Button
+      android:id="@+id/btnCustomListView"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:layout_marginBottom="261dp"
+      android:text="L3 - CustomListView"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/btnListView" />
+</androidx.constraintlayout.widget.ConstraintLayout>
